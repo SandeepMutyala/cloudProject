@@ -19,7 +19,7 @@ class Dashboard extends Component {
     handleUpload = async () => {
         var data = new FormData();
         data.append("data", this.state.selectedFile)
-        axios.post("/upload", data).then((res) => {
+        axios.post("http://ec2-54-166-126-237.compute-1.amazonaws.com/upload", data).then((res) => {
             alert("File uploaded successfully! Please wait for few minutes to get your csv.")
         }, (error) => {
          console.log(error);
@@ -28,7 +28,7 @@ class Dashboard extends Component {
      }
 
     downloadCSV = () => {
-        axios.get("/getFile").then((res) => {
+        axios.get("http://ec2-54-166-126-237.compute-1.amazonaws.com/getFile").then((res) => {
             fileDownload(res.data, 'winter_cloud_output.csv')
         }, (error) => {
          alert("Error occurred while getting file!")
