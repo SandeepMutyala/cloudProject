@@ -1,0 +1,32 @@
+.dashboard{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.cardLeft {
+    float:left;
+    width:50%;
+
+}
+    
+.cardRight {
+    float:right;
+    width:50%;
+}
+
+.eachCard {
+    
+    height:250px;
+    background-color: #D8D8D8;
+    text-align:center;
+    margin:10px;
+    box-shadow: 5px 3px #474d5a;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+
+.content {
+    justify-content: flex-end;
+}

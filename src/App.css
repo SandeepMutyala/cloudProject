@@ -1,0 +1,56 @@
+h1 {
+    font-size: 2em;
+}
+
+body {
+    visibility: visible !important;
+}
+
+.formfield form {
+    margin-top: 1em;
+    max-width: 30%;
+}
+
+.welcome_heading {
+    color: cornflowerblue;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.buttons {
+    margin-left: 1em;
+}
+
+.linkcss {
+    text-decoration: none;
+}
+
+.heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    color: rgb(69, 69, 177);
+    padding-left: 20%;
+    padding-top: 8%;
+}
+
+.navbar, .navbar-end, .navbar-menu, .navbar-start {
+align-items: stretch !important;
+display: flex !important;
+}
+    
+.navbar-menu {
+flex-grow: 1 !important;
+flex-shrink: 0 !important;
+box-shadow: none !important;
+padding: 0 !important;
+}
+    
+.navbar-item {
+display: flex !important;
+}
+
+.navbar-end {
+justify-content: flex-end !important;
+margin-left: auto !important;
+}
+    
